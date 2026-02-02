@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Tanmay</title>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -59,9 +58,7 @@
             font-weight: bold;
         }
 
-        #yesBtn { background-color: #ff4d6d; color: white; z-index: 11; transition: transform 0.2s; }
-        #yesBtn:hover { transform: scale(1.1); }
-        
+        #yesBtn { background-color: #ff4d6d; color: white; z-index: 11; }
         #noBtn { background-color: #adb5bd; color: white; z-index: 100; position: relative; }
 
         #bubble {
@@ -142,15 +139,6 @@
             document.getElementById('bubble').classList.add('hidden');
             document.getElementById('successMessage').classList.remove('hidden');
             document.body.style.backgroundColor = "#ffb3c1";
-            
-            // Confetti Trigger
-            confetti({
-                particleCount: 150,
-                spread: 70,
-                origin: { y: 0.6 },
-                colors: ['#ff4d6d', '#ffb3c1', '#ffffff']
-            });
-
             setInterval(createHeart, 50); 
         }
     </script>
